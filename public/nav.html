@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style rel="stylesheet" type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            background-image: url(photos/url6.jpeg);
+            background-size: cover;
+            background-position: center center;
+            height: 100vh;
+        }
+        .wrapper{
+            width: 860px;
+            margin: 0 auto;
+        }
+        .wrapper ul{
+            list-style: none;
+            margin-top: 2%;
+        }
+        .wrapper ul li{
+            background: #262626;
+            width: 170px;
+            border: 1px solid #fff;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            float: left;
+            color: #fff;
+            font-size: 14px;
+            position: relative;
+        }
+        ul li:hover{
+            background: crimson;
+        }
+        ul ul{
+            display: none;
+        }
+        ul li:hover > ul{
+            display: block;
+        }
+        ul ul ul{
+            margin-left: 170px;
+            top: -4px;
+            position: absolute;
+        }
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <!---div class="wrapper">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li id="elem1">services
+                    <ul id="elem2">
+                        <li>Marketing</li>
+                        <li>Design
+                            <ul>
+                                <li>Web</li>
+                                <li>Graphics</li>
+                                <li>Interior</li>
+                            </ul>
+                        </li>
+                        <li>Branding</li>
+                    </ul>
+                </li>
+                <li>Portfolio</li>
+                <li>Contacts</li>
+            </ul>
+        </!-div>
+        <div-- class="btn" id="ibtn" onclick="furun()" style="cursor: pointer">
+            click me
+        </div-->
+        <div class="page">
+            <div class="contianer pt-10 px-10 grid lg:grid-cols-3">
+        <div class="border-blue-400 border-0 bg-white overflow-hidden
+         rounded-2xl mr-2 mb-5">
+            <img class="w-full h-60 object-cover float-right"
+             src="photos/url6.jpeg" 
+             alt="a pic should be here">
+             <div class="contents">
+                <div class="title font-bold uppercase p-2 pb-0">City View </div>
+                <div class="name text-sm lowercase p-2 pt-0">Dubai</div>
+             </div>
+             </div>
+        <div class="border-blue-400 border-0 bg-white overflow-hidden
+         rounded-2xl mr-2 mb-5">
+            <img class="w-full h-60 object-cover"
+             src="photos/yokohama_ferris_wheel-wallpaper-3840x2160.jpg" 
+             alt="a pic should be here">
+             <div class="contents">
+                <div class="title font-bold uppercase p-2 pb-0">City View </div>
+                <div class="name text-sm lowercase p-2 pt-0">Dubai, cover</div>
+             </div>
+             </div>   
+        <div class="border-blue-400 border-0 bg-white overflow-hidden
+        rounded-2xl mb-5 mr-2">
+           <img class="w-full h-60 object-contain"
+            src="photos/yokohama_ferris_wheel-wallpaper-3840x2160.jpg" 
+            alt="a pic should be here">
+            <div class="contents">
+               <div class="title font-bold uppercase p-2 pb-0">City View </div>
+               <div class="name text-sm lowercase p-2 pt-0">Dubai, contain</div>
+            </div>
+            </div>   
+            <div class="border-blue-400 border-0 bg-white overflow-hidden
+            rounded-2xl mb-5 mr-2">
+               <img class="w-full h-60 object-fill"
+                src="photos/yokohama_ferris_wheel-wallpaper-3840x2160.jpg" 
+                alt="a pic should be here">
+                <div class="contents">
+                   <div class="title font-bold uppercase p-2 pb-0">City View </div>
+                   <div class="name text-sm lowercase p-2 pt-0">Dubai, fill</div>
+                </div>
+                </div>
+               
+        <div class="border-blue-400 border-0 bg-white overflow-hidden
+        rounded-2xl mb-5 mr-2">
+           <img class="w-full h-60 object-scale-down"
+            src="photos/yokohama_ferris_wheel-wallpaper-3840x2160.jpg" 
+            alt="a pic should be here">
+            <div class="contents">
+               <div class="title font-bold uppercase p-2 pb-0">City View </div>
+               <div class="name text-sm lowercase p-2 pt-0">Dubai, scale-down</div>
+            </div>
+            </div>
+           
+        <div class="border-blue-400 border-0 bg-white overflow-hidden
+        rounded-2xl mb-5 mr-2">
+           <img class="w-full h-60 object-cover"
+            src="photos/yokohama_ferris_wheel-wallpaper-3840x2160.jpg" 
+            alt="a pic should be here">
+            <div class="contents">
+               <div class="title font-bold uppercase p-2 pb-0">City View </div>
+               <div class="name text-sm lowercase p-2 pt-0">Dubai, none</div>
+            </div>
+            </div>
+           
+        <div class="border-blue-400 border-0 bg-white overflow-hidden
+        rounded-2xl mb-5 mr-2">
+           <img class="w-full h-60 object-cover"
+            src="photos/yokohama_ferris_wheel-wallpaper-3840x2160.jpg" 
+            alt="a pic should be here">
+            <div class="contents">
+               <div class="title font-bold uppercase p-2 pb-0">City View </div>
+               <div class="name text-sm lowercase p-2 pt-0">Dubai</div>
+            </div>
+            </div>
+           
+        <div class="border-blue-400 border-0 bg-white overflow-hidden
+        rounded-2xl mb-5 mr-2">
+           <img class="w-full h-60 object-cover"
+            src="photos/yokohama_ferris_wheel-wallpaper-3840x2160.jpg" 
+            alt="a pic should be here">
+            <div class="contents">
+               <div class="title font-bold uppercase p-2 pb-0">City View </div>
+               <div class="name text-sm lowercase p-2 pt-0">Dubai</div>
+            </div>
+            </div>
+             
+        <div class="border-blue-400 border-0 bg-white overflow-hidden
+        rounded-2xl mb-5 mr-2">
+           <img class="w-full h-60 object-cover"
+            src="photos/yokohama_ferris_wheel-wallpaper-3840x2160.jpg" 
+            alt="a pic should be here">
+            <div class="contents">
+               <div class="title font-bold uppercase p-2 pb-0">City View </div>
+               <div class="name text-sm lowercase p-2 pt-0">Dubai</div>
+            </div>
+            </div>
+             
+        <div class="border-blue-400 border-0 bg-white overflow-hidden
+        rounded-2xl mb-5 mr-2">
+           <img class="w-full h-60 object-cover"
+            src="photos/yokohama_ferris_wheel-wallpaper-3840x2160.jpg" 
+            alt="a pic should be here">
+            <div class="contents">
+               <div class="title font-bold uppercase p-2 pb-0">City View </div>
+               <div class="name text-sm lowercase p-2 pt-0">Dubai</div>
+            </div>
+            </div>
+             
+        <div class="border-blue-400 border-0 bg-white overflow-hidden
+        rounded-2xl mb-5 mr-2">
+           <img class="w-full h-60 object-cover"
+            src="photos/yokohama_ferris_wheel-wallpaper-3840x2160.jpg" 
+            alt="a pic should be here">
+            <div class="contents">
+               <div class="title font-bold uppercase p-2 pb-0">City View </div>
+               <div class="name text-sm lowercase p-2 pt-0">Dubai</div>
+            </div>
+            </div>
+             
+        <div class="border-blue-400 border-0 bg-white overflow-hidden
+        rounded-2xl mb-5 mr-2">
+           <img class="w-full h-60 object-cover"
+            src="photos/yokohama_ferris_wheel-wallpaper-3840x2160.jpg" 
+            alt="a pic should be here">
+            <div class="contents">
+               <div class="title font-bold uppercase p-2 pb-0">City View </div>
+               <div class="name text-sm lowercase p-2 pt-0">Dubai</div>
+            </div>
+            </div>
+             
+        <div class="border-blue-400 border-0 bg-white overflow-hidden
+        rounded-2xl mb-5 mr-2">
+           <img class="w-full h-60 object-cover"
+            src="photos/yokohama_ferris_wheel-wallpaper-3840x2160.jpg" 
+            alt="a pic should be here">
+            <div class="contents">
+               <div class="title font-bold uppercase p-2 pb-0">City View </div>
+               <div class="name text-sm lowercase p-2 pt-0">Dubai</div>
+            </div>
+            </div>
+        </div>
+        <div>right side</div>
+        </div>
+    </div>
+    <script>
+        function furun(){
+            let dur = document.getElementById('ibtn');
+            dur.innerHTML = "clicked"
+
+            let drop = document.getElementById('elem2');
+            drop.style.display = "block";
+        }
+    </script>
+
+
+</body>
+</html>

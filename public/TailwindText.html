@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Document</title>
+</head>
+<body class="bg-white">
+    <div class="bg-white dark:bg-black dark:text-white">
+    <form action="">
+        <input type="text" name="" id="" class="border border-transparent focus:outline-none focus:ring-2
+        focus:ring-purple-600 focus:border-transparent">
+        <button class="bg-purple-600 hover:bg-purple-700 focus:outline-none focus:ring-2 focus:ring-purple-600
+        focus:ring-opacity-50">Sign-up</button>
+        <div class="flex justify-end border-2 border-blue-600">
+            <div class="p-3 border-2 border-red-500" id="out_btn">
+                <div class="align-center border-2 border-black cursor-pointer" oclick="chngeTheme()" id="btn">Black Theme</div>
+            </div>
+        </div>
+    </form>
+    <button id="butt">Click</button>
+    </div>
+    <script>
+        function changeTheme(){
+            console.log('Inside the function')
+            const doc = document.getElementsByClassName('html')
+
+            if(doc.classList.contains('black')){
+                doc.classList.remove('black')
+            }else{
+                doc.classList.add('black')
+            }
+        }
+        
+        let button = document.getElementById("btn");
+        button.addEventListener("click", ()=>{
+            console.log("Button Clicked.");
+            event.stopPropagation();
+        });
+
+        let button1 = document.getElementById("out_btn");
+        button1.addEventListener("click", ()=>{
+            console.log("Outside Div Clicked.");
+        });
+        
+    </script>
+</body>
+</html>

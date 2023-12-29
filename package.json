@@ -1,0 +1,24 @@
+{
+  "name": "SIdeProject",
+  "version": "1.0.0",
+  "description": "",
+  "main": "indexj.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/style.css -o public/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andimare/SIdeProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andimare/SIdeProject/issues"
+  },
+  "homepage": "https://github.com/andimare/SIdeProject#readme",
+  "dependencies": {
+    "tailwind": "^4.0.0",
+    "tailwindcss" : "^2.2.15"
+  }
+}
